@@ -5,7 +5,11 @@ function calcular($num1, $num2)
     return $num1 * $num2; 
 }
 
-echo $_POST['num1'] . ' x ' . $_POST['num2'] . ' es igual a: ' . calcular($_POST['num1'], $_POST['num2']);
+echo $_POST['num1'] . ' x ' . $_POST['num2'] . ' es igual a: ' . calcular($_POST['num1'], $_POST['num2']) . '<br>';
+
+//var_dump($_POST['sexo']);
+
+var_dump($_POST);
 
 /*
 EJERCICIO 8: ¿Recuerdas tus clases de Geometría? 

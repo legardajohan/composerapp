@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Elementos del formulario</h1>
+    
+    <!-- Elementos del formulario -->
+    <form action="formulario.php" method="post">
+        <!-- text -->
+        <p>
+            Nombre: 
+            <input type="text" name="name">
+        </p>
+
+        <!-- password -->
+        <p>
+            Contraseña: 
+            <input type="password" name="password" id="pass">
+        </p>
+
+        <!-- radio -->
+        <p>
+            Sexo: 
+            <input type="radio" name="sex" value="men">Hombre
+            <input type="radio" name="sex" value="women">Mujer
+            <input type="radio" name="sex" value="other">Otro
+        </p>
+
+        <!-- checkbox -->
+        <p>
+            Aficiones: 
+            <input type="checkbox" name="hobbie[]" value="futbol">Fútbol
+            <input type="checkbox" name="hobbie[]" value="dibujar">Dibujar
+            <input type="checkbox" name="hobbie[]" value="leer">Leer
+        </p>
+
+        <!-- select -->
+        <p>
+            Películas favoritas: 
+            <select name="movies">
+                <option value="matrix">Matrix</option>
+                <option value="avatar">Avatar</option>
+                <option value="apocalypto">Apocalypto</option>
+                <option value="isla">La isla siniestra</option>
+                <option value="locos">Locos de ira</option>
+            </select>
+        </p>
+
+        <!-- area de texto -->
+        <p>
+            <textarea name="comentario" cols="30" rows="5" placeholder="Escriba aquí"></textarea>
+        </p>
+
+        <!-- archivos -->
+        <p>
+            Avatar: 
+            <input type="file" name="avatar">
+        </p>
+
+        <!-- campos ocultos -->
+        <input type="hidden" name="state" value="open">
+
+        <!-- boton -->
+        <input type="submit" name="form" value="Enviar" id="data">
+
+    </form>
+
+</body>
+</html>
